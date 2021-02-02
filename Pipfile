@@ -1,0 +1,40 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+docker-compose = "*"
+caniusepython3 = "*"
+isort = "*"
+mypy = "*"
+pycodestyle = "*"
+pydocstyle = "*"
+pylint = "*"
+mock = "*"
+pyhamcrest = "*"
+pytest-cov = "*"
+pytest = "*"
+tox = "*"
+ipython = "*"
+parso = "*"
+pyyaml = "*"
+bumpversion = "*"
+pre-commit = "*"
+doc8 = "*"
+bridgecrew = "*"
+mkdocs = "*"
+click-man = "*"
+pygments = "*"
+pymdown-extensions = "*"
+mkdocs-material = "*"
+checkov = "*"
+
+[packages]
+
+[scripts]
+test = "pytest"
+update = "pre-commit autoupdate"
+
+[requires]
+python_version = "3.8.0"
