@@ -1,14 +1,14 @@
 #!/usr/bin/env ksh
 # -*- coding: utf-8 -*-
 
-function core::dependences {
-    message_warning "Method Not Implement ${CORE_PACKAGE_NAME}"
-}
-
 function core::install {
-    message_warning "Method Not Implement ${CORE_PACKAGE_NAME}"
+    core::internal::core::install "${1}"
 }
 
 function core::load {
     core::internal::core::load
+}
+
+function core::exists {
+    core::internal::core::exists "${1}"
 }
