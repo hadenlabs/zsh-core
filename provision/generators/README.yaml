@@ -40,7 +40,6 @@ requirements: |-
   This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
   ```{bash}
-  https://github.com/luismayta/zsh-core
   https://github.com/luismayta/zsh-notify
   ```
 
@@ -49,11 +48,5 @@ installation:
   - 'docs/include/installation/antigen.md'
   - 'docs/include/installation/antibody.md'
 
-# How to use this project
-usage: |-
-  ```bash
-  make setup
-  ```
-
-examples:
-  - 'docs/examples/common.md'
+include:
+  - 'docs/functions.md'
