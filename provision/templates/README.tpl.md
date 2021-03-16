@@ -81,6 +81,7 @@
 
 
 {{ if has (ds "config") "quickstart" -}}
+
 ## :bulb: Quick Start
 
 {{ (ds "config").quickstart -}} {{ end }}
@@ -92,24 +93,29 @@
 {{ range $file := (datasource "config").examples -}}
 {{ (include "includes" $file) }}
 {{- end }}
-{{- end }}
-
+{{ end }}
 
 {{ if has (ds "config") "include" }} {{ range $file := (datasource "config").include -}} {{ (include "includes" $file) }} {{- end }} {{- end }}
-
 
 {{ if has (ds "config") "related" }}
 
 ## Related Projects
 
-Check out these related projects. {{ range $related := (ds "config").related }} {{ printf "- [%s](%s) - %s" $related.name $related.url $related.description }}{{ end }}
+Check out these related projects.
+{{ range $related := (ds "config").related }}
+{{ printf "* [%s](%s) - %s" $related.name $related.url $related.description }}
+{{ end }}
 
-{{ end}} {{ if has (ds "config") "references" }}
+{{ end}}
+
+{{ if has (ds "config") "references" }}
 
 ## :blue_book: References
 
-For additional context, refer to some of these links. {{ range $reference := (ds "config").references }} {{ printf "- [%s](%s) - %s" $reference.name $reference.url $reference.description }}{{ end }}
-
+For additional context, refer to some of these links.
+{{ range $reference := (ds "config").references }}
+{{ printf "* [%s](%s) - %s" $reference.name $reference.url $reference.description }}
+{{ end }}
 {{ end}}
 
 ## Help
@@ -136,7 +142,7 @@ In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
 
 **NOTE:** Be sure to rebase the latest changes from "upstream" before making a pull request!
 
-### Versioning
+#### Versioning
 
 Releases are managed using github release feature. We use [Semantic Versioning](http://semver.org) for all the releases. Every change made to the code base will be referred to in the release notes (except for cleanups and refactorings).
 
