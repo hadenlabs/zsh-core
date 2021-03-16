@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 function core::install {
-    core::internal::core::install "${1}"
+    core::internal::core::install "${@}"
 }
 
 function core::load {
