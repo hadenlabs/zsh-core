@@ -2,8 +2,10 @@
 # -*- coding: utf-8 -*-
 
 function core::internal::core::install {
-    message_info "Installing ${CORE_PACKAGE_NAME}"
-    message_success "Installed ${CORE_PACKAGE_NAME}"
+    if ! core::internal::core::exists brew; then
+        message_warning "${CORE_MESSAGE_BREW}"
+    fi
+    brew install "${@}"
 }
 
 function core::internal::core::load {
