@@ -18,9 +18,15 @@
 
 zsh-core plugin for zsh.
 
-## :page_facing_up: License
+## Features
 
-zsh-core is an open-sourced software licensed under the [MIT license](LICENSE.md).
+- [axel](https://github.com/axel-download-accelerator/axel)
+- [rg](https://github.com/BurntSushi/ripgrep)
+- [fzf](https://github.com/junegunn/fzf)
+- [jq](https://stedolan.github.io/jq/)
+- [bat](https://github.com/sharkdp/bat)
+- [the_silver_searcher](https://github.com/ggreer/the_silver_searcher)
+- [coreutils](https://www.gnu.org/software/coreutils)
 
 ## Requirements
 
@@ -88,7 +94,7 @@ File a GitHub [issue](https://github.com/hadenlabs/zsh-core/issues), send us an 
 
 Please use the [issue tracker](https://github.com/hadenlabs/zsh-core/issues) to report any bugs or file feature requests.
 
-### Developing
+### Development
 
 In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
 
@@ -100,7 +106,7 @@ In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
 
 **NOTE:** Be sure to rebase the latest changes from "upstream" before making a pull request!
 
-### Versioning
+#### Versioning
 
 Releases are managed using github release feature. We use [Semantic Versioning](http://semver.org) for all the releases. Every change made to the code base will be referred to in the release notes (except for cleanups and refactorings).
 
@@ -111,6 +117,10 @@ Copyright © 2018-2021 [Hadenlabs](https://hadenlabs.com)
 ## Trademarks
 
 All other trademarks referenced herein are the property of their respective owners.
+
+## License
+
+The code and styles are licensed under the MIT license [See project license.](LICENSE).
 
 ## Don't forget to 🌟 Star 🌟 the repo if you like zsh-core
 
