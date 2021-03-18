@@ -35,6 +35,15 @@ badges:
 description: |-
   zsh-core plugin for zsh.
 
+features:
+  - '[axel](https://github.com/axel-download-accelerator/axel)'
+  - '[rg](https://github.com/BurntSushi/ripgrep)'
+  - '[fzf](https://github.com/junegunn/fzf)'
+  - '[jq](https://stedolan.github.io/jq/)'
+  - '[bat](https://github.com/sharkdp/bat)'
+  - '[the_silver_searcher](https://github.com/ggreer/the_silver_searcher)'
+  - '[coreutils](https://www.gnu.org/software/coreutils)'
+
 requirements: |-
 
   This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
