@@ -178,3 +178,8 @@ if core::exists fd; then
     # Apply the command to CTRL-T as well
     export FZF_CTRL_T_COMMAND="fd --type f --hidden --follow --exclude .git"
 fi
+
+function net {
+    # check connection
+    ping 8.8.8.8 | grep -E --only-match --color=never '[0-9\.]+ ms'
+}
