@@ -19,8 +19,10 @@ function core::pkg::main::factory {
     source "${ZSH_CORE_PATH}"/pkg/helper.zsh
 
     # shellcheck source=/dev/null
+    source "${ZSH_CORE_PATH}"/pkg/docker.zsh
+
+    # shellcheck source=/dev/null
     source "${ZSH_CORE_PATH}"/pkg/alias.zsh
 }
 
 core::pkg::main::factory
-
