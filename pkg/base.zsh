@@ -21,6 +21,10 @@ function message_error {
     core::internal::message::error "${1}"
 }
 
-function core_warning {
+function message_warning {
     core::internal::message::warning "${1}"
+}
+
+function message_success {
+    core::internal::message::success "${1}"
 }
