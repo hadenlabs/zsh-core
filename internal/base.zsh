@@ -36,3 +36,10 @@ function core::internal::message::warning {
 
     printf "${CLEAR}${YELLOW}[WARNING]: %s ${CLEAR}\n" "$1";
 }
+
+function core::internal::message::success {
+    CLEAR='\033[0m'
+    GREEN="\033[0;32m"
+
+    printf "${CLEAR}${GREEN}[SUCCESS]: %s ${CLEAR}\n" "$1";
+}
