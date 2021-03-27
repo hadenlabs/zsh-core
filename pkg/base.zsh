@@ -12,3 +12,15 @@ function core::load {
 function core::exists {
     core::internal::core::exists "${1}"
 }
+
+function message_info {
+    core::internal::message::info "${1}"
+}
+
+function message_error {
+    core::internal::message::error "${1}"
+}
+
+function core_warning {
+    core::internal::message::warning "${1}"
+}

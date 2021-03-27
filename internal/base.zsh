@@ -15,3 +15,24 @@ function core::internal::core::load {
 function core::internal::core::exists {
     command -v "${1}" > /dev/null
 }
+
+function core::internal::message::info {
+    CLEAR='\033[0m'
+    LIGHT_GREEN='\033[1;32m'
+
+    printf "${CLEAR}${LIGHT_GREEN}[INFO]: %s ${CLEAR}\n" "${1}";
+}
+
+function core::internal::message::error {
+    CLEAR='\033[0m'
+    RED="\033[0;31m"
+
+    printf "${CLEAR}${RED}[ERROR]: %s ${CLEAR}\n" "${1}"; return 0;
+}
+
+function core::internal::message::warning {
+    CLEAR='\033[0m'
+    YELLOW="\033[0;33m"
+
+    printf "${CLEAR}${YELLOW}[WARNING]: %s ${CLEAR}\n" "$1";
+}
