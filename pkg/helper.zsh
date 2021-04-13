@@ -30,12 +30,10 @@ function fkill {
 #   - Bypass fuzzy finder if there's only one match (--select-1)
 #   - Exit if there's no match (--exit-0)
 function fa {
-    # TODO 23: ignore node_modules + other things
     # fa <dir> - Search dirs and cd to them -
     local dir
-    dir=$(find "${1:-.}" -path '*/\.*' -prune \
-               -o -type d -print 2> /dev/null | fzf +m) &&
-        cd "${dir}" || return
+    dir=$(fd --type d --hidden --follow --exclude .git | fzf +m | awk -F: '{print $1}' ) \
+        && cd "${dir}" || return
 }
 
 # fah [FUZZY PATTERN] - Open the files hidden
@@ -84,11 +82,12 @@ function falias {
 
 
 # fo [FUZZY PATTERN] - Open the selected file with the default editor
+#
 #   - Bypass fuzzy finder if there's only one match (--select-1)
 #   - Exit if there's no match (--exit-0)
 function fo {
     local file
-    file=$(fzf-tmux | awk -F: '{print $1}')
+    file=$(fd --type f --hidden --follow --exclude .git | fzf | awk -F: '{print $1}')
     if [ -n "${file}" ]; then
         ${EDITOR} "${file}"
     fi
@@ -125,7 +124,7 @@ function ftmk {
         tmux kill-session -t "${1}"; return
     fi
     session=$(tmux list-sessions -F "#{session_name}" 2>/dev/null \
-        | fzf --exit-0) &&  tmux kill-session -t "${session}" || echo "No session found to delete."
+        | fzf --exit-0) && tmux kill-session -t "${session}" || echo "No session found to delete."
 }
 
 # fgr fuzzy grep via rg and open in vim with line number
