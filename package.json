@@ -4,7 +4,7 @@
   "description": "zsh-core for zsh",
   "repository": "ssh://git@github.com/hadenlabs/zsh-core.git",
   "author": "Luis Mayta <slovacus@gmail.com>",
-  "license": "LGPLv3",
+  "license": "LGPL-3.0",
   "engines": {
     "node": ">=14"
   },
