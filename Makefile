@@ -25,7 +25,7 @@ AWS_VAULT ?= ${TEAM}
 PROJECT := zsh-core
 
 PYTHON_VERSION=3.8.0
-NODE_VERSION=14.15.5
+NODE_VERSION=14.16.1
 PYENV_NAME="${PROJECT}"
 GIT_IGNORES:=python,node,go,zsh
 GI:=gi
@@ -92,12 +92,13 @@ setup:
 	@echo "==> install packages..."
 	make python.setup
 	make python.precommit
-	@cp -rf provision/git/hooks/prepare-commit-msg .git/hooks/
 	@[ -e ".env" ] || cp -rf .env.example .env
 	make yarn.setup
 	make git.setup
 	@echo ${MESSAGE_HAPPY}
 
+## setup environment of project
+.PHONY: environment
 environment:
 	@echo "==> loading virtualenv ${PYENV_NAME}..."
 	make python.environment
