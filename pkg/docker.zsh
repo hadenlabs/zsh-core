@@ -39,7 +39,7 @@ function youtube-dl {
 }
 
 function pandoc {
-    docker run --rm -v "${PWD}":/source hadenlabs/pandoc "$@"
+    docker run --rm -v "${PWD}":/data hadenlabs/pandoc "$@"
 }
 
 function komiser {
