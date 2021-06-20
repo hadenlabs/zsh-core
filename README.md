@@ -12,9 +12,9 @@
 
   -->
 
-# zsh-core
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/hadenlabs/zsh-core.svg?label=latest&sort=semver)](https://github.com/hadenlabs/zsh-core/releases) [![Lint](https://img.shields.io/github/workflow/status/hadenlabs/zsh-core/lint-code)](https://github.com/hadenlabs/zsh-core/actions) [![Issues](https://img.shields.io/github/issues/hadenlabs/zsh-core)](https://github.com/hadenlabs/zsh-core/issues) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735)](https://keepachangelog.com) [![Beacon](https://ga-beacon.appspot.com/G-MZEK48EGE8/zsh-goenv/readme)](https://github.com/hadenlabs/zsh-core)
 
-[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/hadenlabs/zsh-core.svg?label=latest&sort=semver)](https://github.com/hadenlabs/zsh-core/releases) [![Lint](https://github.com/hadenlabs/zsh-core/actions/workflows/lint.yml/badge.svg?branch=develop)](https://github.com/hadenlabs/zsh-core/actions) [![Issues](https://img.shields.io/github/issues/hadenlabs/zsh-core.svg)](https://github.com/hadenlabs/zsh-core/issues) [![Latest Release](https://img.shields.io/github/release/hadenlabs/zsh-core.svg)](https://github.com/hadenlabs/zsh-core/releases)
+# zsh-core
 
 zsh-core plugin for zsh.
 
