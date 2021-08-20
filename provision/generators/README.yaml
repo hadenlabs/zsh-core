@@ -21,24 +21,21 @@ github_repo: hadenlabs/zsh-core
 
 # Badges to display
 badges:
-  - name: GitHub tag (latest SemVer)
-    image: https://img.shields.io/github/v/tag/hadenlabs/zsh-core.svg?label=latest&sort=semver
+  - name: Latest Release
+    image: https://img.shields.io/github/release/hadenlabs/zsh-core
     url: https://github.com/hadenlabs/zsh-core/releases
   - name: Lint
     image: https://img.shields.io/github/workflow/status/hadenlabs/zsh-core/lint-code
-    url: https://github.com/hadenlabs/zsh-core/actions
-  - name: Issues
-    image: https://img.shields.io/github/issues/hadenlabs/zsh-core
-    url: https://github.com/hadenlabs/zsh-core/issues
+    url: https://github.com/hadenlabs/zsh-core/actions?workflow=lint-code
+  - name: pre-commit
+    image: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
+    url: https://github.com/pre-commit/pre-commit
   - name: Conventional Commits
     image: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow
     url: https://conventionalcommits.org
   - name: KeepAChangelog
     image: https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735
     url: https://keepachangelog.com
-  - name: Beacon
-    image: https://ga-beacon.appspot.com/G-MZEK48EGE8/zsh-goenv/readme
-    url: https://github.com/hadenlabs/zsh-core
 
 # Short description of this project
 description: |-
