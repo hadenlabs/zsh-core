@@ -30,7 +30,7 @@ repos:
     hooks:
       - id: commitlint
         stages: [commit-msg]
-        additional_dependencies: ['@hadenlabs/commitlint-config']
+        additional_dependencies: ["@hadenlabs/commitlint-config"]
         args:
           - --config=.ci/linters/.commitlintrc.json
   - repo: https://github.com/pre-commit/pre-commit-hooks
@@ -78,6 +78,7 @@ repos:
       - id: shellcheck
         exclude: >
           (?x)^(
+            zsh-core.plugin.zsh$|
             .+\.provision/git/hooks/prepare-commit-msg$|
             .+\.tpl.sh$|
           )$
