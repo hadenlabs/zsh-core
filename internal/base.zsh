@@ -43,3 +43,7 @@ function core::internal::message::success {
 
     printf "${CLEAR}${GREEN}[SUCCESS]: %s ${CLEAR}\n" "$1";
 }
+
+function core::internal::multiplatform::install {
+    message_warning "Method not implement for ${CORE_PACKAGE_NAME}"
+}
