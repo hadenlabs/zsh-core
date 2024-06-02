@@ -5,7 +5,7 @@
 # Defines install core for osx or linux.
 #
 # Authors:
-#   Luis Mayta <slovacus@gmail.com>
+#   Luis Mayta <luis@hadenlabs.com>
 #
 
 # shellcheck disable=SC2034  # Unused variables left for readability
