@@ -99,6 +99,7 @@ linters:
     - unconvert
     - misspell
     - nakedret
+    - unused
 
   presets:
     - bugs
