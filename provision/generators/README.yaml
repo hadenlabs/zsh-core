@@ -14,7 +14,7 @@ email:
 # logo: docs/logo.png
 
 # License of this project
-license: 'LGPL-3.0'
+license: "LGPL-3.0"
 
 # Canonical GitHub repo
 github_repo: hadenlabs/zsh-core
@@ -38,13 +38,13 @@ badges:
     url: https://keepachangelog.com
 
 features:
-  - '[axel](https://github.com/axel-download-accelerator/axel)'
-  - '[rg](https://github.com/BurntSushi/ripgrep)'
-  - '[fzf](https://github.com/junegunn/fzf)'
-  - '[jq](https://stedolan.github.io/jq/)'
-  - '[bat](https://github.com/sharkdp/bat)'
-  - '[the_silver_searcher](https://github.com/ggreer/the_silver_searcher)'
-  - '[coreutils](https://www.gnu.org/software/coreutils)'
+  - "[axel](https://github.com/axel-download-accelerator/axel)"
+  - "[rg](https://github.com/BurntSushi/ripgrep)"
+  - "[fzf](https://github.com/junegunn/fzf)"
+  - "[jq](https://stedolan.github.io/jq/)"
+  - "[bat](https://github.com/sharkdp/bat)"
+  - "[the_silver_searcher](https://github.com/ggreer/the_silver_searcher)"
+  - "[coreutils](https://www.gnu.org/software/coreutils)"
 
 requirements: |-
 
@@ -60,15 +60,15 @@ description: |-
   zsh-core for project
 
 installation:
-  - 'docs/include/installation/oh-my-zsh.md'
-  - 'docs/include/installation/antigen.md'
-  - 'docs/include/installation/antibody.md'
+  - "docs/include/installation/oh-my-zsh.md"
+  - "docs/include/installation/antigen.md"
+  - "docs/include/installation/antibody.md"
 
 usages:
   - docs/usage.md
 
 include:
-  - 'docs/functions.md'
+  - "docs/functions.md"
 
 examples:
-  - 'docs/examples/common.md'
+  - "docs/examples/common.md"
