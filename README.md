@@ -40,8 +40,8 @@ This is a list of plugins that need to be installed previously to enjoy all the 
 ## Installation
 
 <!-- Space: Projects -->
-<!-- Parent: Project -->
-<!-- Title: Project Installation Oh-My-Zsh -->
+<!-- Parent: ZshCore -->
+<!-- Title: Installation Oh-My-Zsh ZshCore -->
 <!-- Label: ZshCore -->
 <!-- Label: Project -->
 <!-- Label: Installation -->
@@ -58,8 +58,8 @@ If you're using [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh), install this pl
 3.  Edit your `.zshrc` and add `plugins=( ... zsh-core )` to your list of plugins
 4.  Open a new terminal and enjoy!
     <!-- Space: Projects -->
-    <!-- Parent: Project -->
-    <!-- Title: Project Installation Antigen -->
+    <!-- Parent: ZshCore -->
+    <!-- Title: Installation Antigen ZshCore-->
     <!-- Label: ZshCore -->
     <!-- Label: Project -->
     <!-- Label: Installation -->
@@ -75,8 +75,8 @@ If you're using [Antigen](https://github.com/zsh-users/antigen), install this pl
 2.  Either open a new terminal to force zsh to load the new plugin, or run `antigen bundle hadenlabs/zsh-core` in a running zsh session.
 3.  Enjoy!
     <!-- Space: Projects -->
-    <!-- Parent: Project -->
-    <!-- Title: Project Installation Antibody -->
+    <!-- Parent: ZshCore -->
+    <!-- Title: Installation Antibody ZshCore-->
     <!-- Label: ZshCore -->
     <!-- Label: Project -->
     <!-- Label: Installation -->
@@ -87,7 +87,7 @@ If you're using [Antigen](https://github.com/zsh-users/antigen), install this pl
 
 If you're using [Antibody](https://github.com/getantibody/antibody), install this plugin by doing the following:
 
-1.  Add :
+1. Add :
 
 ```{.sourceCode .bash}
 antibody bundle hadenlabs/zsh-core
@@ -95,8 +95,8 @@ antibody bundle hadenlabs/zsh-core
 
 to your `.zshrc` where you're adding your other plugins.
 
-2.  Either open a new terminal to force zsh to load the new plugin, or run `antibody bundle hadenlabs/zsh-core` in a running zsh session.
-3.  Enjoy!
+2. Either open a new terminal to force zsh to load the new plugin, or run `antibody bundle hadenlabs/zsh-core` in a running zsh session.
+3. Enjoy!
 
 ## Usage
 
