@@ -16,3 +16,7 @@ function exa::load {
 if core::exists exa; then
     exa::load
 fi
+
+function multiplatform::install {
+  core::internal::multiplatform::install
+}
