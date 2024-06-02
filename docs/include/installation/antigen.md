@@ -1,7 +1,7 @@
 <!-- Space: Projects -->
-<!-- Parent: ZshFlutter -->
-<!-- Title: Installation Antigen ZshFlutter-->
-<!-- Label: ZshFlutter -->
+<!-- Parent: ZshCore -->
+<!-- Title: Installation Antigen ZshCore-->
+<!-- Label: ZshCore -->
 <!-- Label: Project -->
 <!-- Label: Installation -->
 <!-- Label: Antigen -->

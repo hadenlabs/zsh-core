@@ -1,7 +1,7 @@
 <!-- Space: Projects -->
-<!-- Parent: ZshFlutter -->
-<!-- Title: Installation Oh-My-Zsh ZshFlutter -->
-<!-- Label: ZshFlutter -->
+<!-- Parent: ZshCore -->
+<!-- Title: Installation Oh-My-Zsh ZshCore -->
+<!-- Label: ZshCore -->
 <!-- Label: Project -->
 <!-- Label: Installation -->
 <!-- Label: Oh-My-Zsh -->

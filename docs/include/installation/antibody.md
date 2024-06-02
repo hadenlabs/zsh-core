@@ -1,7 +1,7 @@
 <!-- Space: Projects -->
-<!-- Parent: ZshFlutter -->
-<!-- Title: Installation Antibody ZshFlutter-->
-<!-- Label: ZshFlutter -->
+<!-- Parent: ZshCore -->
+<!-- Title: Installation Antibody ZshCore-->
+<!-- Label: ZshCore -->
 <!-- Label: Project -->
 <!-- Label: Installation -->
 <!-- Include: docs/disclaimer.md -->
