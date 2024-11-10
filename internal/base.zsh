@@ -8,6 +8,13 @@ function core::internal::core::install {
     brew install "${@}"
 }
 
+function core::internal::cargo::install {
+    if ! core::internal::core::exists cargo; then
+        message_warning "${CORE_MESSAGE_RUST}"
+    fi
+    cargo install "${@}"
+}
+
 function core::internal::core::load {
     message_warning "Method not implement for ${CORE_PACKAGE_NAME}"
 }
