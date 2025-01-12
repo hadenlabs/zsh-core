@@ -1,6 +1,6 @@
 #!/usr/bin/env ksh
 # -*- coding: utf-8 -*-
-export CORE_APP_CASK=(
+export CORE_APP=(
     adoptopenjdk8
     airtable
     alacritty
