@@ -14,6 +14,8 @@ function core::internal::main::factory {
         source "${ZSH_CORE_PATH}"/internal/linux.zsh
       ;;
     esac
+    # shellcheck source=/dev/null
+    source "${ZSH_CORE_PATH}"/internal/helper.zsh
 }
 
 core::internal::main::factory

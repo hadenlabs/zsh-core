@@ -100,7 +100,7 @@ to your `.zshrc` where you're adding your other plugins.
 
 ## Usage
 
-# How to use this project
+# 🚀 How to use this project
 
 ```bash
 task setup

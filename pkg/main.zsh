@@ -14,7 +14,6 @@ function core::pkg::main::factory {
         source "${ZSH_CORE_PATH}"/pkg/linux.zsh
       ;;
     esac
-
     # shellcheck source=/dev/null
     source "${ZSH_CORE_PATH}"/pkg/helper.zsh
 
