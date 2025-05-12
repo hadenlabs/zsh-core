@@ -13,7 +13,7 @@ function core::internal::android::install {
   mkdir -p "${ANDROID_HOME}"
 
   [ "$(! core::exists java)" ] && brew install openjdk@11 openjdk@17
-  [ "$(! core::exists sdkmanager)" ] && brew install --cask android-commandlinetools
+  [ "$(! core::exists sdkmanager)" ] && brew install android-commandlinetools
 
   sdkmanager --update --sdk_root="${ANDROID_HOME}"
   sdkmanager --install "cmdline-tools;latest" --sdk_root="${ANDROID_HOME}"
