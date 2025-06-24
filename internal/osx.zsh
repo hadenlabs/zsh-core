@@ -12,14 +12,22 @@ function core::internal::android::install {
   touch "${ANDROID_FILE_REPOSITORIES}"
   mkdir -p "${ANDROID_HOME}"
 
-  [ "$(! core::exists java)" ] && brew install openjdk@11 openjdk@17
-  [ "$(! core::exists sdkmanager)" ] && brew install android-commandlinetools
+  if ! core::exists java; then
+    brew install openjdk@11 openjdk@17 openjdk@21
+  fi
+
+  if ! core::exists sdkmanager; then
+    brew install android-commandlinetools
+    mkdir -p "$ANDROID_HOME/cmdline-tools/latest"
+    cp -R "$(brew --prefix)/share/android-commandlinetools/"* "$ANDROID_HOME/cmdline-tools/latest/"
+  fi
 
   sdkmanager --update --sdk_root="${ANDROID_HOME}"
-  sdkmanager --install "cmdline-tools;latest" --sdk_root="${ANDROID_HOME}"
+
+  yes | sdkmanager "cmdline-tools;latest" --sdk_root="${ANDROID_HOME}"
   yes | sdkmanager "platforms;android-${ANDROID_PLATFORM_VERSION}" --sdk_root="${ANDROID_HOME}"
   yes | sdkmanager "platform-tools" --sdk_root="${ANDROID_HOME}"
-  yes | sdkmanager "platform-tools" "build-tools;${ANDROID_SDK_VERSION}" --sdk_root="${ANDROID_HOME}"
+  yes | sdkmanager "build-tools;${ANDROID_SDK_VERSION}" --sdk_root="${ANDROID_HOME}"
   yes | sdkmanager "extras;google;m2repository" --sdk_root="${ANDROID_HOME}"
   yes | sdkmanager "extras;android;m2repository" --sdk_root="${ANDROID_HOME}"
 
