@@ -16,6 +16,12 @@ function core::internal::main::factory {
     esac
     # shellcheck source=/dev/null
     source "${ZSH_CORE_PATH}"/internal/helper.zsh
+
+    # shellcheck source=/dev/null
+    source "${ZSH_CORE_PATH}"/internal/git.zsh
+
+    # shellcheck source=/dev/null
+    source "${ZSH_CORE_PATH}"/internal/backup.zsh
 }
 
 core::internal::main::factory

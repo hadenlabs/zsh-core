@@ -92,6 +92,7 @@ repos:
         exclude: >
           (?x)^(
             zsh-core.plugin.zsh$|
+            pkg/helper/core.zsh$|
             .+\.provision/git/hooks/prepare-commit-msg$|
             .+\.tpl.sh$|
           )$

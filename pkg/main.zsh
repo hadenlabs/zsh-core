@@ -15,7 +15,7 @@ function core::pkg::main::factory {
       ;;
     esac
     # shellcheck source=/dev/null
-    source "${ZSH_CORE_PATH}"/pkg/helper.zsh
+    source "${ZSH_CORE_PATH}"/pkg/helper/main.zsh
 
     # shellcheck source=/dev/null
     source "${ZSH_CORE_PATH}"/pkg/docker.zsh
