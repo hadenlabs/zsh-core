@@ -168,9 +168,8 @@ tasks:
       - >-
         [ -e ".env" ] || cp -rf .env.example .env
       - task: uv:setup
-      - task: uv:precommit
-      - task: git:setup
 
+      - task: git:setup
   environment:
     desc: Setup environment of project
     cmds:

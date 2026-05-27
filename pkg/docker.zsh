@@ -38,10 +38,6 @@ function youtube-dl {
     docker run --rm -v "${PWD}":/data hadenlabs/youtube-dl "$@"
 }
 
-function pandoc {
-    docker run --rm -v "${PWD}":/data hadenlabs/pandoc "$@"
-}
-
 function komiser {
     docker run --rm -d -p 3000:3000 \
            -e AWS_ACCESS_KEY_ID="${AWS_ACCESS_KEY_ID}" \
